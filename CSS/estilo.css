@@ -34,6 +34,12 @@ nav a{
 
 }
 
+a:hover{
+    padding: 5px;
+    background-color: rgb(133, 6, 6);
+    border-radius: 30px;
+}
+
 .naranja{
     color: rgb(199, 116, 21);
     font-size: x-large;
@@ -101,14 +107,14 @@ p{
 
 .galeria{
     display: grid;
-    grid-template-columns: repeat(3, 200px);
-    overflow: hidden;
+    grid-template-columns: repeat(3, 25vw);
     width: 50vw;
     margin: auto;
+    justify-content: center;
     
 }
 .galeria div{
-    margin: 2px;
+    margin: 20px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -121,21 +127,20 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: end;
 }
 
 .segundop{
-    width: 250px;
-    height: 10px;
+    width: 15%;
     background-color: rgb(97, 6, 6);
-    padding: 150px 50px 80px 50px;
+    padding: 15.5%;
     text-align: center;
 }
 
 .mapa{
     display: inline-block;
-    width: 600px;
-    height: 350px;
+    width: 50vw;
+    height: 35vw;
     padding-top: 50px;
     margin-top: 0px;
     border-color: rgb(97, 6, 6);
@@ -171,8 +176,29 @@ h4{
 }
 
 
-@media (max-width:600px){
+@media (max-width:700px){
     .naranja{
         font-size: large;
+    }
+
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+
+    }
+
+    .menugaleria{
+        display: flex;
+        justify-content: center;
+    }
+
+    .estudio .segundop{
+            background-color: transparent;
+            color: black;
+    }
+    
+    .mapa{
+        width: 80vw;
     }
 }
